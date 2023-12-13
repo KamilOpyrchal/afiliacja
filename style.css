@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  top: 0;
+  width: 90%;
+  display: flex;
+  padding: 0 5%;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+  position: fixed;
+  background-color: white;
+}
+
+header img {
+  height: 100px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li {
+  padding-left: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: #626262;
+}
+
+.join:hover {
+  background: #8365bb;
+}
+.main {
+  background-image: url("./images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* dostosowuje obraz do wielkości kontenera */
+  background-position: center center;
+  margin-top: 100px;
+  width: 100%;
+  max-height: 1200px;
+  padding: 15vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+.main img {
+  width: 100%;
+  position: absolute;
+  top: 100px;
+}
+
+.main-content {
+  padding: 3rem 0;
+  background: rgba(223, 124, 9, 0.35);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  max-width: 50rem;
+  height: 20rem;
+  margin: auto;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.main-content h2 {
+  font-size: 2rem;
+}
+.main-content button {
+  border-radius: 15px;
+  background: #43335e;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: #fff;
+
+  text-align: center;
+  margin: 10% 0;
+  width: 300px;
+  height: 75px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.container h1 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin: 3rem 0 1.5rem 0;
+}
+
+.zalety {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-gap: 2rem;
+}
+.block {
+  position: relative;
+  width: 100%;
+  /* background-image: url("./images/zdomu.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+}
+
+.block img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.block-desc {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 50%;
+  text-align: left;
+}
+
+.block-desc h3 {
+  color: #df7c09;
+  font-size: 32px;
+  text-shadow: 2px 2px #75450d;
+}
+.block-desc p {
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 2px 2px #75450d;
+}
+
+.opinie {
+  padding: 2rem 0;
+  background: linear-gradient(180deg, #df7c09 0%, #753f00 100%);
+}
+.opinie .container h1 {
+  color: white;
+  font-weight: 900;
+}
+
+.opinie-content {
+  background-color: white;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.opinie-content img {
+  width: 100%;
+}
+
+.zarobki-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.zarobki-content img {
+  width: 100%;
+}
+
+footer {
+  width: 90%;
+  height: 100px;
+  background: #626262;
+
+  color: white;
+  padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  position: absolute;
+  left: 5%;
+}
