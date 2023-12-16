@@ -4,26 +4,17 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  background: rgb(223, 124, 9);
-  background: linear-gradient(
-    0deg,
-    rgba(223, 124, 9, 1) 0%,
-    rgba(150, 81, 0, 1) 100%
-  );
-}
-
 header {
   top: 0;
   width: 90%;
   display: flex;
   padding: 0 5%;
-  height: 100px;
+  min-height: 100px;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 2;
-  position: fixed;
+  position: sticky;
   background-color: white;
 }
 
@@ -40,6 +31,24 @@ header ul li {
   padding-left: 40px;
 }
 
+.toggle-button {
+  position: absolute;
+  top: 40px;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -47,11 +56,11 @@ a {
 a:hover {
   color: #626262;
 }
-
+/* rgsdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff */
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: 100px auto 0;
+  margin: auto 0;
   background-color: white;
   padding: 2rem 2rem;
 }
@@ -130,4 +139,83 @@ footer {
 footer p {
   position: absolute;
   left: 5%;
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    text-align: center;
+  }
+  .content-desc {
+    margin: 0 auto;
+    text-align: left;
+  }
+  .content {
+    display: block;
+    text-align: center;
+    margin: 2rem 0 0 0;
+  }
+  footer {
+    padding-top: 2%;
+    display: block;
+    text-align: center;
+  }
+  footer p {
+    position: static;
+    margin: 2% 0;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .toggle-button {
+    display: flex;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  nav {
+    display: none;
+  }
+  nav.active {
+    display: flex;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    width: 90%;
+  }
+  .content img {
+    width: 80%;
+  }
+  .container {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0;
+  }
+  .content-desc {
+    padding: 2rem 2rem;
+  }
+  .join {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-desc h1 {
+    font-size: 2rem;
+  }
+  .content-desc ul {
+    font-size: 1rem;
+  }
 }
