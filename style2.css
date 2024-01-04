@@ -60,7 +60,7 @@ a:hover {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto 0;
+  margin: 0 auto;
   background-color: white;
   padding: 2rem 2rem;
 }
